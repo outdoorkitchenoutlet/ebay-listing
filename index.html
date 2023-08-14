@@ -1,203 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OutdoorKitchenOutletcom | eBay Stores </title>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <style>
-        :root {
-            --theme-1-bg:#000;
-            --theme-1-text: #fff;
-            --theme-2-bg:#ba4444;
-            --theme-2-text: #fff;
-        }
-        body{
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OutdoorKitchenOutletcom | eBay Stores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <style>
+    :root {
+    --theme-1-bg:#000;
+    --theme-1-text: #fff;
+    --theme-2-bg:#ba4444;
+    --theme-2-text: #fff;
+    }
+    *,p {
+        margin: 0;
+        padding: 0;
+    }
+    body, p, ul, li{
             font-family: Poppins;
             letter-spacing: .8px;
+            color: #333;
         }
-       * {
-            margin: 0;
-            padding: 0;
-        }
-        .mobile-only{
-            display: none;
-        }
-        h3 {
-            background-color: var(--theme-2-bg);
-            color: var(--theme-2-text);
-            padding: 6px 10px;
-        }
-        p {
-            line-height: 1.75em;
-            margin-bottom: 15px;
-        }
-        ul, ol{
-            margin-left: 15px;
-        }
-        .page-width{
-            margin: 25px;
-        }
-        .oko-hellobar{
-            background-color: var(--theme-1-bg);
-            color: var(--theme-1-text);
-            padding: 15px;
-            display: flex;
-        }
-        .oko-hellobar p {
-            margin-bottom: 0;
-        }
-        .oko-hellobar p:last-child {
-            text-align: right;
-        }
-        .container-width{
-            display: flex;
-            margin-top: 25px;
-        }
-        aside {
-            width: 25%;
-            padding: 0 20px;
-        }
-        .logo {
-            margin-bottom: 20px;
-        }
-        .logo img{
-            width: 100%;
-        }
-        figure img{
-            width: 100%;
-            margin: 20px 0;
-        }
-        main{
-            width: 75%;
-        }
-        .oko-tabs{
-            background-color: var(--theme-2-bg);
-            color: var(--theme-2-text);
-            text-align: center;
-            padding: 8px 0;
-            margin: 10px 0 15px;
-        }
-        .content article{
-            padding: 20px;
-        }
-        /* tab */
-        .oko-tab{
-        cursor: pointer;
-        margin:0px 25px;
-        display:inline-block;
-        color:#ffb3b3;
-        border-radius:3px 3px 0px 0px;
-        }
-        .content{
-        background:#fffffff6;
-        min-height:900px;
-        /*width:100%;
-        max-width:500px;*/
-        border-radius:3px;
-        overflow:hidden;
-        /*padding:20px;*/
-        }
-        .oko-panel{
-        display:none;
-        animation: fadein .8s;
-        }
-        @keyframes fadein {
-            from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
-        }
-        .panel-title{
-        font-size:1.5em;
-        font-weight:bold
-        }
-        .radio{
-        display:none;
-        }
-        #one:checked ~ .content #home,
-        #two:checked ~ .content #promotions,
-        #three:checked ~ .content #reviews,
-        #four:checked ~ .content #contact {
-        display:block
-        }
-        #one:checked ~ .oko-tabs #one-oko-tab,
-        #two:checked ~ .oko-tabs #two-oko-tab,
-        #three:checked ~ .oko-tabs #three-oko-tab,
-        #four:checked ~ .oko-tabs #four-oko-tab {
-        /*xbackground:#fffffff6;*/
-        color:#fff;
-        /*border-top: 3px solid #000;*/
-        }
-    </style>
+    .desktop-only{
+        display: block;
+    }
+    h1{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    h4 {
+        background-color: var(--theme-2-bg);
+        color: var(--theme-2-text);
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
+    h5{
+        font-size: 1em;
+        font-weight: 700;
+    }
+    .oko-hellobar{
+        background-color: var(--theme-1-bg);
+        color: var(--theme-1-text);
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    .oko-hellobar p{
+        color: #fff;
+    }
+    .oko-hellobar p:nth-child(2){
+        text-align: right;
+    }
+    .logo-nav {
+        margin-bottom: 20px;
+    }
+    .logo-nav a {
+        width: 23.6%;
+    }
+    .logo-nav img{
+        width: 100%;
+    }
+    .nav-tab{
+        background-color: var(--theme-2-bg);
+        margin-left: 20px;
+        padding: 8px 0;
+    }
+    .nav-pills {
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: transparent;
+    }
+    .nav {
+        --bs-nav-link-hover-color: #fff;
+    }
+    .nav-link {
+        color: #ffb3b3;
+    }
+    .navbar-toggler {
+    background-color: #fff;
+    border: none;
+    }
+    .col-sm-3 img {
+        width: 100%;
+    }
+    .shop-categories h4{
+        padding: 12px;
+    }
+    .shop-categories ul{
+        padding: 0;
+    }
+    .shop-categories li{
+        list-style: none;
+        padding: 8px;
+        border-bottom: 1px solid #cecece;
+    }
+    .shop-categories :where(li a) {
+        display: block;
+        color: #888;
+        font-weight: 400;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    article{
+        padding: 0 15px;
+    }
+    article p {
+        margin-bottom: 15px;
+    }
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 18px;
+    }
+    .desktop-only{
+        display: none;
+    }
+    .oko-hellobar p{
+        text-align: center;
+    }
+    .nav {
+        display: inline;
+    }
+    .nav-tab {
+        margin: 15px 0 0 0;
+    }
+    .logo-nav a {
+        width: 75%;
+    }
+    .logo-nav img{
+        width: 100%;
+    }
+    .logo img {
+        margin-bottom: 20px;
+    }
+}
+  </style>
 </head>
 <body>
 
-<section class="oko-hellobar">
-    <p>Experts are standing by to provide you with best pricing and exclusive package deal discounts.</p>
-    <p>888  755 2984</p>
-</section>
+<div class="container-fluid oko-hellobar">
+    <div class="row">
+        <div class="col-sm-10">
+            <p>Experts are standing by to provide you with best pricing and exclusive package deal discounts.</p>
+        </div>
+        <div class="col-sm-2">
+            <p>888 755 2984</p>
+        </div>
+    </div>
+</div>
 
-<section class="page-width">
-    
-    <section class="logo mobile-only">
-        <img src="https://cdn.shopify.com/s/files/1/0660/1900/0577/files/oko__logo.png">
-    </section>
-
-    <section class="container-width">
-            <aside>
-                <section class="logo">
-                    <a href="https://www.ebay.com/str/outdoorkitchenoutletcom">
+<div class="container-fluid">
+    <div class="row">
+            <nav class="navbar navbar-expand-lg logo-nav">
+                <div class="container">
+                    <a href="#">
                         <img src="https://cdn.shopify.com/s/files/1/0660/1900/0577/files/oko__logo.png">
                     </a>
-                </section> 
-                <section class="shop-categories">
-                    <h3>Shop All Categories</h3>
-                    <ul>
-                        <li><a href="">Promotions/Discounts</a></li>
-                        <li><a href="https://www.ebay.com/str/outdoorkitchenoutletcom/Built-in-Grills/_i.html?store_cat=11477852015">BBQ Grills and Smokers</a></li>
-                        <li><a href="https://www.ebay.com/str/outdoorkitchenoutletcom/Drawers/_i.html?store_cat=11477856015">Outdoor Kitchen Storage</a></li>
-                        <li><a href="https://www.ebay.com/str/outdoorkitchenoutletcom/Side-Burners/_i.html?store_cat=11478082015">Side Burners</a></li>
-                        <li><a href="https://www.ebay.com/str/outdoorkitchenoutletcom/Refrigerators/_i.html?store_cat=11477870015">Outdoor Refrigeration</a></li>
-                        <li><a href="https://www.ebay.com/str/outdoorkitchenoutletcom/Sinks/_i.html?store_cat=11478162015">Sink &amp; Bar Centers</a></li>
-                        <li><a href="">Outdoor Kitchen Ventilation</a></li>
-                        <li><a href="">Outdoor Pizza Oven</a></li>
-                    </ul>
-                </section>
-
-                <section class="image-banner">
-                    <figure>
-                        <img src="https://cdn.shopify.com/s/files/1/0660/1900/0577/files/We_Beat_Competitor_Pricing.png?v=1691731259" alt="We beat competitor price">
-                    </figure>
-                </section>
-
-                <section class="newsletter">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our eBay newsletter to receive our latest news and promotions</p>
-                </section>
-
-                <section class="payment-method">
-                    <img src="">
-                </section>
-            </aside>
-
-            <main class="main">                
-                <input class="radio" id="one" name="group" type="radio" checked>
-                <input class="radio" id="two" name="group" type="radio">
-                <input class="radio" id="three" name="group" type="radio">
-                <input class="radio" id="four" name="group" type="radio">
-                
-                <div class="oko-tabs">
-                  <label class="oko-tab" id="one-oko-tab" for="one">Home</label>
-                  <label class="oko-tab" id="two-oko-tab" for="two">Promotions</label>
-                  <label class="oko-tab" id="three-oko-tab" for="three">Reviews</label>
-                  <label class="oko-tab" id="four-oko-tab" for="four">Contact Us</label>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        
+                    <div class="collapse navbar-collapse nav-tab" id="navbarNav">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-promo" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Promotions</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-review" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Contact Us</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              
-                <div class="content">
-                  <div class="oko-panel" id="home">
+            </nav>
+       
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 shop-categories">
+            <h4>Shop All Categories</h4>
+                <ul>
+                    <li><a href="">Promotions/Discounts</a></li>
+                    <li><a href="https://www.ebay.com/str/outdoorkitchenoutletcom/Built-in-Grills/_i.html?store_cat=11477852015">BBQ Grills and Smokers</a></li>
+                    <li><a href="https://www.ebay.com/str/outdoorkitchenoutletcom/Drawers/_i.html?store_cat=11477856015">Outdoor Kitchen Storage</a></li>
+                    <li><a href="https://www.ebay.com/str/outdoorkitchenoutletcom/Side-Burners/_i.html?store_cat=11478082015">Side Burners</a></li>
+                    <li><a href="https://www.ebay.com/str/outdoorkitchenoutletcom/Refrigerators/_i.html?store_cat=11477870015">Outdoor Refrigeration</a></li>
+                    <li><a href="https://www.ebay.com/str/outdoorkitchenoutletcom/Sinks/_i.html?store_cat=11478162015">Sink &amp; Bar Centers</a></li>
+                    <li><a href="">Outdoor Kitchen Ventilation</a></li>
+                    <li><a href="">Outdoor Pizza Oven</a></li>
+                </ul>
+            <div class="desktop-only" style="margin: 10px 0;">
+                <img src="https://cdn.shopify.com/s/files/1/0660/1900/0577/files/We_Beat_Competitor_Pricing.png?v=1691731259" alt="We beat competitor price">
+            </div>
+            <div class="newsletter desktop-only">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our eBay newsletter to receive our latest news and promotions</p>
+            </div>
+        </div>
+        <div class="col-sm-9 article-content">
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                     <article>
                         <h1>Bull Outlaw 30-Inch 4-Burner-Built-In Grill Liquid Propane Gas - 26038</h1>
                         <section>
@@ -219,12 +226,10 @@
                             </section>
                         </section>
                     </article>
-    
-                    
-                    <h3>Item Description</h3>
+                    <h4>Item Description</h4>
                     <article>
                         <p>Introducing the Premium Outlaw Built-In Propane Gas BBQ Grill – A Grilling Marvel!</p>
-                        <p>Key Features:</p>
+                        <p><strong>Key Features:</strong></p>
                         <ul>
                             <li>Porcelain-coated cast iron burners for superior conduction and even heat distribution.</li>
                             <li>Easy-to-use piezo ignition system for a quick and hassle-free start-up.</li>
@@ -235,17 +240,17 @@
                         </ul>
                     </article>
     
-                    <h3>About Us</h3>
+                    <h4>About Us</h4>
                     <article>
                         <p>Welcome to the eBay store for the Outdoor Kitchen Outlet.   We have been selling most major grill brands from our Souther California location since 2002 and our eBay store is a small extension of our online marketing presence.   We offer thousands of items at the best prices.  Most prices are so low we cannot even advertise the actual sale price.  Our sales people are available to assist you in finding the right items at the best prices.  We offer exclusive discounts and package deals many with limited quanities.  Contact us now for best prices.</p>
                         <p>We are committed to providing the highest level of customer service.  If you have any problems or concerns please give us a chance to solve the problem and offer the best customer service before leaving any negative feedback.   Our goal is to provide highest level 5 star service.</p>
                     </article>
     
                     
-                    <h3>Return Policy</h3>
+                    <h4>Return Policy</h4>
                     <article>
                         <p>The Outdoor Kitchen Outlet offers a Satisfaction Guarantee.   Our experts will help you select the best equipment at the right price.   We are here before and after the sale and if you should have any problems or concerns we are here to help.</p>
-                        <h4>Returns</h4>
+                        <h5>Returns</h5>
                         <ol>
                             <li>We offer a 30 day return policy on all items.(Unless stated otherwise in the listing).</li>
                             <li>All returns must be in original condition and must include the original packaging and content intact.</li>
@@ -255,39 +260,35 @@
                             <li>Please allow 3-5 business days after we receive your package to process your return.</li>
                             <li>Any returns that violate this return policy will not be accepted and will be sent back at customers’ expense.</li>
                         </ol>
-                        <h4>Warranty</h4>
+                        <h5>Warranty</h5>
                         <p>If you have an issue with a product we are happy to assist with the warranty claim.</p>
                     </article>
-                  </div>
-              
-                  <div class="oko-panel" id="promotions">
-                      Promotions
-                  </div>
-              
-                  <div class="oko-panel" id="reviews">
-                      Reviews
-                  </div>
-              
-                  <div class="oko-panel" id="contact">
-                    <article>
-                      <p>At Outdoor Kitchen Outlet customer service is our top priority. Whether it&quot;s a question for a product or help with your order we are here to assist. Here are three ways to get in contact with us.</p>
-                      <ol>
-                        <li>Give us a c a l l 888 755 2914</li>
-                        <li>Email us your questions or order #</li>
-                        <li>Use Ebay online CHAT</li>
-                      </ol>
-                    </article>
-                   </div>
-              
                 </div>
 
-            </main>
 
-    </section>
-    
-    <section class="recommendation">
-        <h4>You may also have interest in...</h4>
-    </section>
-</section>
+                <div class="tab-pane fade" id="pills-promo" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    Promotions
+                </div>
+
+
+                <div class="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">Reviews</div>
+
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                    <article>
+                        <p>At Outdoor Kitchen Outlet customer service is our top priority. Whether it&quot;s a question for a product or help with your order we are here to assist. Here are three ways to get in contact with us.</p>
+                        <ol>
+                          <li>Give us a c a l l 888 755 2914</li>
+                          <li>Email us your questions or order #</li>
+                          <li>Use Ebay online CHAT</li>
+                        </ol>
+                      </article>
+                </div>
+              </div>
+        
+        </div>
+    </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
