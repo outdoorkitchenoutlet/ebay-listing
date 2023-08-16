@@ -127,14 +127,14 @@
     }
     .swiper-slide {
         text-align: center;
-        width: 25% !important;
+        width: 33.33% !important;
     }
     .swiper-slide img{
-        width: 75%;
+        width: 100%;
     }
     .swiper-button-prev,
     .swiper-button-next {
-        color: var(--theme-1);
+        color: #fff;
     }
 
 @media only screen and (max-width: 768px) {
@@ -357,7 +357,7 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".imgSlider", {
-      slidesPerView: 4,
+      slidesPerView: 3,
       loop: true,
       navigation: {
         nextEl: ".swiper-button-next",
