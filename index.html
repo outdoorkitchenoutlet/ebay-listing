@@ -6,7 +6,6 @@
   <title>OutdoorKitchenOutletcom | eBay Stores</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <style>
     :root {
@@ -27,6 +26,9 @@
     .desktop-only{
         display: block;
     }
+    .mobile-only{
+        display: none;
+    }
     h1{
         font-size: 24px;
         font-weight: 700;
@@ -44,7 +46,6 @@
     .oko-hellobar{
         background-color: var(--theme-1);
         color: var(--theme-1-text);
-        margin-bottom: 20px;
         padding: 15px;
     }
     .oko-hellobar p{
@@ -57,7 +58,7 @@
         text-align: right;
     }
     .logo-nav {
-        margin-bottom: 20px;
+        margin: 20px 0;
     }
     .logo-nav a {
         width: 23.6%;
@@ -106,9 +107,21 @@
         list-style-type: none;
         text-decoration: none;
     }
+    .competitor-banner{
+        width: 100%;
+        margin: 0px 0 15px;
+    }
+    .newsletter p{
+        font-size: 14px;
+        padding: 0 10px;
+    }
     .paypal {
         width: 80%;
         margin: auto;
+    }
+    .product-view,
+    .product-details{
+        margin: 0 0 15px 0;
     }
     article{
         padding: 0 15px;
@@ -141,6 +154,9 @@
     h1{
         font-size: 18px;
     }
+    .mobile-only{
+        display: block;
+    }
     .desktop-only{
         display: none;
     }
@@ -162,6 +178,22 @@
     .logo img {
         margin-bottom: 20px;
     }
+    .competitor-banner{
+        width: 75%;
+        margin: 10px auto 0;
+    }
+    .paypal {
+        width: 50%;
+        margin: auto;
+    }
+    .paypal img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .competitor-banner img,
+    .product-image img {
+        width: 100%;
+    }
 }
   </style>
 </head>
@@ -178,7 +210,7 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid oko-logo-menu">
     <div class="row">
             <nav class="navbar navbar-expand-lg logo-nav">
                 <div class="container">
@@ -224,34 +256,33 @@
                     <li><a href="">Outdoor Kitchen Ventilation</a></li>
                     <li><a href="">Outdoor Pizza Oven</a></li>
                 </ul>
-            <div class="desktop-only" style="margin: 10px 0;">
+            <div class="competitor-banner desktop-only">
                 <img src="https://cdn.shopify.com/s/files/1/0660/1900/0577/files/we-beat-competitor-pricing.webp" alt="We beat competitor price">
             </div>
             <div class="newsletter desktop-only">
                 <h4>Newsletter</h4>
                 <p>Subscribe to our eBay newsletter to receive our latest news and promotions</p>
                 <hr>
-            </div>
-            
+            </div>   
             <div class="paypal desktop-only">
                 <img src="https://cdn.shopify.com/s/files/1/0660/1900/0577/files/paypal-payment.webp" alt="We beat competitor price">
             </div>
         </div>
-        <div class="col-sm-9 article-content">
+        <div class="article-content col-sm-9">
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                    <article>      
-                            <h1>Bull Outlaw 30-Inch 4-Burner-Built-In Grill Liquid Propane Gas - 26038</h1>
+                    <section class="product-view"><!-- Edit product-title and product-image -->      
+                            <h1 class="product-title">Bull Outlaw 30-Inch 4-Burner-Built-In Grill Liquid Propane Gas - 26038</h1>
                             <section class="row">
                                 <section class="product-image col-sm-10">
-                                    <img src="https://cdn.shopify.com/s/files/1/0660/1900/0577/files/product-image.png?v=1691998055">
+                                    <img src="https://cdn.shopify.com/s/files/1/0660/1900/0577/files/product-image.png">
                                 </section>
-                                
-                                <section class="product-badges col-sm-2 desktop-only">
-                                    <img src="https://cdn.shopify.com/s/files/1/0660/1900/0577/files/badges.png?v=1691998055">
+                                <section class="product-badges desktop-only col-sm-2">
+                                    <img src="https://cdn.shopify.com/s/files/1/0660/1900/0577/files/badges.png">
                                 </section>
                             </section>
-                    </article>
+                    </section>
+                    <section class="product-details">
                     <h4>Item Description</h4>
                     <article>
                         <p>Introducing the Premium Outlaw Built-In Propane Gas BBQ Grill – A Grilling Marvel!</p>
@@ -265,14 +296,11 @@
                             <li>Double-walled hood retains heat, preventing discoloration and maintaining the ideal cooking environment.</li>
                         </ul>
                     </article>
-    
                     <h4>About Us</h4>
                     <article>
-                        <p>Welcome to the eBay store for the Outdoor Kitchen Outlet.   We have been selling most major grill brands from our Souther California location since 2002 and our eBay store is a small extension of our online marketing presence.   We offer thousands of items at the best prices.  Most prices are so low we cannot even advertise the actual sale price.  Our sales people are available to assist you in finding the right items at the best prices.  We offer exclusive discounts and package deals many with limited quanities.  Contact us now for best prices.</p>
-                        <p>We are committed to providing the highest level of customer service.  If you have any problems or concerns please give us a chance to solve the problem and offer the best customer service before leaving any negative feedback.   Our goal is to provide highest level 5 star service.</p>
+                        <p>Welcome to the eBay store for the Outdoor Kitchen Outlet. We have been selling most major grill brands from our Southern California location since 2002 and our eBay store is a small extension of our online marketing presence. We offer thousands of items at the best prices. Most prices are so low we cannot even advertise the actual sale price. Our sales people are available to assist you in finding the right items at the best prices. We offer exclusive discounts and package deals many with limited quatities. Contact us now for best prices.</p>
+                        <p>We are committed to providing the highest level of customer service. If you have any problems or concerns please give us a chance to solve the problem and offer the best customer service before leaving any negative feedback. Our goal is to provide highest level 5 star service.</p>
                     </article>
-    
-                    
                     <h4>Return Policy</h4>
                     <article>
                         <p>The Outdoor Kitchen Outlet offers a Satisfaction Guarantee.   Our experts will help you select the best equipment at the right price.   We are here before and after the sale and if you should have any problems or concerns we are here to help.</p>
@@ -289,6 +317,7 @@
                         <h5>Warranty</h5>
                         <p>If you have an issue with a product we are happy to assist with the warranty claim.</p>
                     </article>
+                    </section>
                 </div>
 
 
@@ -340,9 +369,12 @@
                         <h1>Contact Us</h1>
                         <p>At Outdoor Kitchen Outlet customer service is our top priority. Whether it&quot;s a question for a product or help with your order we are here to assist. Here are three ways to get in contact with us.</p>
                         <ol>
-                          <li>Give us a c a l l 888 755 2914</li>
+                          <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/> </svg>
+                             888 755 2914
+                          </li>
                           <li>Email us your questions or order #</li>
-                          <li>Use Ebay online CHAT</li>
+                          <li>Online ebay Chat</li>
                         </ol>
                       </article>
                 </div>
@@ -350,11 +382,25 @@
         
         </div>
     </div>
+    <div class="mobile-only">
+        <hr>
+        <div class="newsletter">
+            <h4>Newsletter</h4>
+            <p>Subscribe to our eBay newsletter to receive our latest news and promotions</p>
+        </div>
+        <div class="competitor-banner">
+            <img src="https://cdn.shopify.com/s/files/1/0660/1900/0577/files/we-beat-competitor-pricing.webp" alt="We beat competitor price">
+            
+        </div>
+        <hr>
+        <div class="paypal">
+            <img src="https://cdn.shopify.com/s/files/1/0660/1900/0577/files/paypal-payment.webp" alt="We beat competitor price">
+        </div>
+    </div>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".imgSlider", {
       slidesPerView: 3,
